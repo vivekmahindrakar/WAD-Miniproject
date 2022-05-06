@@ -8,7 +8,39 @@
     0px 0px 151px #0fa; */
 #Collab
 {
-    font-size: 60px;
-    color:#fff;
     
+    font-size: 14px;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    left: 0px;
+    
+}
+#Collab span{
+    font-size: 14px;
+}
+.Slogans
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    margin-top:15%;
+    
+}
+#Date {
+    position: relative;
+    top: 10%;
+    height:48px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid #00ffff;
+    outline :none;
+    font-family: 'Montserrat';
+    color: #fff;
+}
+#event-name
+{
+    color: #00ffff;
+    font-size: 4em;
+    font-weight: 800;
 }

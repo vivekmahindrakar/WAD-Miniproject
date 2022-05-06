@@ -5,9 +5,16 @@
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
+  background-color: #111;
+  scroll-behavior:smooth;
 
 }
-
+.home-page-content
+{
+  display: flex;
+  justify-content: center;
+  scroll-behavior:smooth;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -19,10 +26,10 @@
   width: 100vw;
   left: 0%;
   z-index: -1;
-  filter: grayscale(100%) blur(5px);
-  transform: rotateY(180deg);
+  
+
 }
-.cool-bg-img::after
+.cool-bg-img
 {
   content: '';
   height: 100%;
@@ -30,7 +37,8 @@
   left:0;
   right: 0;
   position: absolute;
-  background: linear-gradient(180deg,rgba(0,0,0,0),black);
+  background-color: #111;
+  
 
 }
 
