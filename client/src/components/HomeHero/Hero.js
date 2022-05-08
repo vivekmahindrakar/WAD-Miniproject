@@ -10,6 +10,8 @@ const Hero = () => {
     Axios.get('/users').then(res =>{
       const Data = res.data;
 
+  }).catch(e=>{
+    console.log(e); 
   })
     
   }

@@ -23,6 +23,8 @@ const Form = () => {
             fname:user.fname,lname:user.lname,email:user.email,event:user.event
         }).then(res =>{
             console.log(res.data);
+        }).catch(e=>{
+          console.log(e); 
         })
         history("/thankyou")
     }
