@@ -11,7 +11,7 @@ const Intro = () => {
         
         <span id='event-name' >GANDHAAR</span>
         <h1 id='Collab'>Sinhgad Acedemy Of Engineering   <span> x </span>  ITSA's </h1>
-        <button id='Date'>On May 16th, 2022</button>
+        <button id='Date'>On June 16th, 2022</button>
         <Timer />
         {/* has announced<strong>TECHNO FEST</strong></h1> */}
     </div>

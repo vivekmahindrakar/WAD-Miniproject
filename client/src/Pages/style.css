@@ -3,6 +3,12 @@
     background-color: #111;
     
 }
+.headings
+{
+    color: #fff;
+    position: relative;
+    
+}
 .main-table
 {
     position: absolute;
@@ -90,7 +96,50 @@ h3{
     left: 0%;
 }
 
+.updateForm
+{
+    position: absolute;
+    width:30%;
+    left: -33%;
+    top:10%;
+    padding: 3em;
+    background-color: #fff;
+    transition: 0.2s all ease-in;
+}
+.updateForm input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7%;
+    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+}
+.updateForm p{
+    width: 25%;
+    text-align: start;
+}
+.updateForm input:last-child
+{
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+}
 
+.update-btn
+{
+    width: 40%;
+    padding: 3%;
+    background-color:#1FDB9D;
+    border: none;
+}
+
+.close-btn {
+    position: relative;
+    right: -47%;
+    margin-top: -16px;
+    height: 28px;
+    width: auto;
+}
 /* @media screen and (min-width:800px)
 {
     #errorcodep{

@@ -1,5 +1,6 @@
 import React, { useState} from 'react'
 import {useNavigate} from 'react-router-dom'
+
 import Axios from 'axios';
 import "./Form.css"
 
@@ -13,20 +14,58 @@ const Form = () => {
     // const[date,setDate] = useState('');
 
     const [user,setUser] = useState({fname:"",lname:"",email:"",event:""});
+    const [amount,setAmount] = useState();
 
-
-    const RegisterMe = (e)=>
+    const RegisterMe = async (e)=>
     {
         e.preventDefault();
+        if(user.event === 'App development')
+        setAmount(90);
+        else if(user.event === 'Webber')
+        setAmount(50);
+        if(user.event ==='Code-a-thon')
+        setAmount(100);
 
-        Axios.post('/registerme',{
-            fname:user.fname,lname:user.lname,email:user.email,event:user.event
+        // var options = {
+        //   key:"rzp_test_m7slwOIqmjEw0K",
+        //   key_secret:"G9WOcRztApX7N1LX815evvlh",
+        //   amount:amount*100,
+        //   currency:'INR',
+        //   name:'WAD Project',
+        //   description:'for testing',
+        //   handler:(response)=>{
+        //     alert(response.razorpay_payment_id);
+        //   },
+        //   prefill:{
+        //     name : "Vivek Mahi",
+        //     email : 'example@gmail.com',
+        //     contact:'1324567890'
+        //   },
+        //   notes:{
+        //     address:'Ghorpuri gaon , Pune 411001'
+        //   },
+        //   theme:{
+        //     color:"#3399cc"
+        //   }
+        // };
+        // var pay = new window.Razorpay(options);
+        // pay.open();
+
+        try {
+          
+          var data =  await Axios.post('/registerme',{
+            fname:user.fname,lname:user.lname,email:user.email,event:user.event,amount:amount
         }).then(res =>{
             console.log(res.data);
         }).catch(e=>{
           console.log(e); 
         })
         history("/thankyou")
+        } catch (error) {
+          
+        }
+
+        
     }
 
     const Rand = Math.floor(Math.random()*1000000000);

@@ -11,7 +11,7 @@ const Timer = () => {
 
   const startTimer= ()=>
   {
-    const Target =  new Date("May 16, 2022 15:52:00").getTime();
+    const Target =  new Date("June 16, 2022 15:52:00").getTime();
 
     intervel = setInterval(()=>
     {

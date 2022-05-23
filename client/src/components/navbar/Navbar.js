@@ -46,13 +46,13 @@ function Navbar() {
         <div class="bar3"></div>
     </div>
 
-    <div className='all-links'>
+    {/* <div className='all-links'>
     <ul className="navigation" id="navigate">
         <li className="links"><a href="#">Expertise</a></li>
         <li className="links"><a href="#">Projects</a></li>
         <li className="links"><a href="#">Contact</a></li>
     </ul>
-    </div>
+    </div> */}
     </div>
   )
 }
